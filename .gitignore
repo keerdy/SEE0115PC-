@@ -216,3 +216,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# PyInstaller 产物
+build/
+dist/
+
+# IDE
+.idea/
+
+# 运行期数据（含日志/崩溃/本地网络隐私）
+data/
+
+# 智能体私有记忆
+.workbuddy/
+
+# 打包安装包（大文件）
+installer/
+
+# 冗余/调试
+*.spec
+source/test_case_25.log
+.learnings/
+defects/
+

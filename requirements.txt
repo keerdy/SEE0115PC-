@@ -1,0 +1,5 @@
+PySide6==6.8.3
+httpx
+PyYAML
+uiautomator2
+pytest

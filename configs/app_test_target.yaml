@@ -1,0 +1,41 @@
+device:
+  host: "192.168.4.1"
+  port: 8080
+  ble_name_prefix: "pocket-"
+  ble_exact_name: ""
+  default_secret_key: "default_secret_key"
+  device_id: "SN1234567890X"
+  app_version: "2.0.1"
+  auth_wait_timeout_seconds: 60
+  connect_timeout_seconds: 10
+  request_timeout_seconds: 30
+  sample_video_file_path: ""
+  sample_delete_file_paths: []
+
+cloud:
+  app_package_current_url: "https://p-api.seevision.cn/app/api/v1/app-packages/current"
+  app_package_method: "POST"
+  app_package_auth_token: ""
+  firmware_check_url: "https://p-api.seevision.cn/app/api/v1/firmware/check"
+  firmware_check_method: "GET"
+  firmware_check_auth_token: ""
+  activate_url: "https://p-api.seevision.cn/app/api/v1/device/activate"
+  activation_code: ""
+  firmware_expected_md5: ""
+  apk_expected_md5: ""
+  firmware_expected_sha256: ""
+  apk_expected_sha256: ""
+
+run:
+  report_output_root: "./artifacts"
+  download_dir: "./artifacts/downloads"
+  case1_iterations: 1
+  case2_iterations: 1000
+  case3_iterations: 5000
+  case4_iterations: 5000
+  case5_iterations: 1000
+  case6_iterations: 1000
+  case7_iterations: 1000
+  pressure_workers: 8
+  preview_range_header: "bytes=0-1048575"
+  stop_on_first_failure: false

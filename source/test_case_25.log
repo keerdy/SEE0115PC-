@@ -1,0 +1,19 @@
+[2026-07-27 17:59:40] Case 25: Photo + Filter + Record + Exposure
+Total cycles: 2000
+Charging policy: battery >30% disables charging; battery <30% enables charging; at exactly 30% keep the current charging state. Testing never pauses for battery level or charging-control failure.
+Each cycle: photo mode -> cycle photo auto exposure -> real power-key photo -> video mode -> advance filter -> record 10s -> playback -> real swipe back -> cycle video auto exposure.
+Delete all completed image/video artifacts every 100 cycles. UI watchdog timeout: 8000ms.
+
+Start Case25 immediately; battery only controls charging around 30%
+Charging disabled
+Battery 51%: charging policy applied, charging=0; test continues
+  Open photo parameter page
+  Switch right parameter page to Pro image mode
+  Photo exposure: AUTO EV=-3 maxISO=100
+  Take one photo via real power key
+Request recording stop before Case25 exit
+Charging enabled
+[2026-07-27 18:00:00] STOP_TIME: UI frozen - video mode page did not open
+STOP: [COMMON_CODE_BUG] UI frozen - video mode page did not open
+[2026-07-27 18:00:00] TEST STOPPED: [COMMON_CODE_BUG] UI frozen - video mode page did not open
+Cycles completed: 0/2000
